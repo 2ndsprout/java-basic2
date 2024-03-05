@@ -3,13 +3,11 @@ package day2;
 public class IDOExam {
     public static void main(String[] args) {
         // 문제 : 1부터 100까지 출력해주세요.
-
         for (int a = 1; a <= 100; a++) {
             System.out.println(a);
         }
 
         // 문제1. 1 ~ 100까지 수중 짝수만 출력
-
         for (int b = 1; b <= 100; b++) {
             if (b % 2 == 0) {
                 System.out.println(b);
@@ -35,7 +33,9 @@ public class IDOExam {
         int score = 0;
 
 
-        //    a b 두 수가 주어지면 a와 b사이의 수를 오름차순 출력해주세요.
+
+
+        //    a b 두 수가 주어지면 a와 b사이의 수를 오름차순 출력해주세요.\
         //    오름차순은 작은 수 부터 큰수로 정렬되는 것을 말합니다.
         //    ex )
         //    오름차순 :  1, 2, 3, 4, 5
@@ -44,11 +44,8 @@ public class IDOExam {
         int a = 12;
         int b = 5;
 
-
-        for (int dan = 2; dan <= 10; dan++) {
-            for (int i = 2; i <= 9; i += 2) {
-                System.out.println(dan + " X " + i + " = " + (dan * i));
-            }
+        for (int b1 = 6; b1 <= 12; b1++) {
+            System.out.println(b1);
         }
 
         // 구구단은 n단 ~ m단 중 홀수단만 1 ~ limit 까지 곱 중 짝수곱만 출력해주세요.
@@ -57,12 +54,13 @@ public class IDOExam {
         int m = 20; // 끝
         int limit = 10; // 곱의 개수
 
-        for (int dan = 5; dan <= 20; dan += 2) {
-            for (int i = 2; i <= 20; i += 2) {
-                System.out.println(dan + " X " + i + " = " + (dan * i));
+        for (int dan = 5; dan <= m; dan += 2) {
+            for (int i = 2; i <= m; i += 2) {
+                    System.out.println(dan + " X " + i + " = " + (dan * i));
             }
         }
 
-
     }
+
+
 }
