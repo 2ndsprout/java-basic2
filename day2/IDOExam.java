@@ -8,17 +8,15 @@ public class IDOExam {
         }
 
         // 문제1. 1 ~ 100까지 수중 짝수만 출력
-        for (int b = 1; b <= 100; b++) {
-            if (b % 2 == 0) {
+        for (int b = 2; b <= 100; b = b + 2) {
                 System.out.println(b);
-            }
         }
         // 문제1. 1 ~ 100까지 수를 출력하는데 숫자 뒤에 짝수는 even, 홀수는 odd를 붙여서 출력
         for (int c = 1; c <= 100; c++) {
             if (c % 2 == 0) {
                 System.out.println(c + " even");
             }
-            if (c % 2 == 1) {
+            else {
                 System.out.println(c + " odd");
             }
         }
@@ -32,6 +30,11 @@ public class IDOExam {
         int time = 74;
         int score = 0;
 
+        for(int i = time; i < 90; i = i + 5) {
+            score = score + 1;
+        }
+        System.out.println(score);
+
 
 
 
@@ -44,8 +47,27 @@ public class IDOExam {
         int a = 12;
         int b = 5;
 
-        for (int b1 = 6; b1 <= 12; b1++) {
-            System.out.println(b1);
+        // v1
+        if(a > b) {
+            for(int i = b; i <= a; i++) {
+                System.out.println(i);
+            }
+        }
+        else {
+            for(int i = b; i <= a; i++) {
+                System.out.println(i);
+            }
+        }
+
+        // v2
+
+        if(a > b) {
+            int c = a;
+            a = b;
+            b = c;
+        }
+        for(int i = a; i <= b; i++) {
+            System.out.println(i);
         }
 
         // 구구단은 n단 ~ m단 중 홀수단만 1 ~ limit 까지 곱 중 짝수곱만 출력해주세요.
@@ -59,6 +81,30 @@ public class IDOExam {
                     System.out.println(dan + " X " + i + " = " + (dan * i));
             }
         }
+        // 문제 : 구구단 작성
+        // 조건 : 짝수번째만 곱하기
+        // 출력예시 :
+
+        //        2 * 2 = 4
+        //        2 * 4 = 8
+        //        2 * 6 = 12
+        //        2 * 8 = 16
+        //
+        //        9단까지 이런식으로 나오면 됩니다.
+
+
+
+        // 몇단까지 보여줄까??
+        for(int dan = 2; dan < 10; dan++) {
+            // 몇번까지 곱해줄까??
+            for(int i = 1; i < 10; i++) {
+                if(i % 2 == 0) {
+                    System.out.println(dan + " * " + i + " = " + dan * i);
+                }
+            }
+        }
+
+
 
     }
 
