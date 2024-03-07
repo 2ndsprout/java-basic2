@@ -4,18 +4,22 @@ import java.security.PrivilegedExceptionAction;
 
 public class ReturnExam {
     public static int func1() {
+
         return 10;
     }
 
     public static int func2(int num1) {
+
         return num1;
     }
 
     public static int func3(int num1) {
+
         return num1 * num1;
     }
 
     public static int func4(int num1, int num2) {
+
         return num1 + num2;
     }
 

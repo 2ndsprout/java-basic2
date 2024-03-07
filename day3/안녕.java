@@ -12,6 +12,7 @@ public class 안녕 {
 
         printValue("안녕");
         // 출력 : 안녕
+
     }
 
 }
