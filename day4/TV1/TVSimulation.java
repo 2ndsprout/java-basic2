@@ -1,6 +1,6 @@
-package Exam.TV1;
+package day4.TV1;
 
- class RemoteSimulation {
+ class TVSimulation {
     public static void main(String[] args) {
 
         샤오미Tv a샤오미Tv = new 샤오미Tv();

@@ -1,4 +1,4 @@
-package Exam.TV2;
+package day4.TV2;
 
  class TVSimulation {
     public static void main(String[] args) {

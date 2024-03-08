@@ -1,6 +1,6 @@
-package Exam;
+package day5;
 
-public class WariiorSimulation {
+public class ConstructorExam {
     public static void main(String[] args) {
 
         전사 a전사 = new 전사();
@@ -26,53 +26,54 @@ public class WariiorSimulation {
     }
 }
 class 전사 {
-    // 인스턴스 변수
+
     String 이름;
-    // 인스턴스 변수
     int 나이;
-    // 인스턴스 변수
     무기 a무기;
 
     void 자기소개() {
         System.out.println("안녕하세요. 저는 " + 나이 + "살 " + 이름 + " 입니다.");
     }
-    void 공격() {
+
+    public void 공격() {
         System.out.print(이름 + "이/가 ");
-        a무기.사용();
+        a무기.무기사용();
     }
+
     public void 스킬사용() {
         System.out.print(이름 + "이/가 ");
         a무기.무기스킬사용();
     }
 }
-class 무기 {
-    public void 사용() {
-    }
-    public void 무기스킬사용() {
-    }
+
+abstract class 무기 {
+    double damage;
+    String weaponName;
+    abstract void 무기사용 ();
+    abstract void 무기스킬사용 ();
 }
+
+
 class 칼 extends 무기 {
-    double damage = 10;
-    double magnification = 2;
-    double skillDamage = damage * magnification;
-    public void 사용() {
-        System.out.println("칼로 데미지 " + damage + " 공격");
+
+    void 무기사용() {
+        weaponName = "칼";
+        damage = 15;
+        System.out.printf("%s로 데미지 %f 를 입힙니다.\n", weaponName, damage);
     }
 
-    public void 무기스킬사용() {
-        System.out.println("연속 베기 스킬을 사용합니다. " + magnification + "배(" + skillDamage + ")의 피해를 입힙니다.");
+    void 무기스킬사용() {
+        System.out.printf("연속 베기 스킬을 사용합니다. 2배(%f)의 피해를 입힙니다.\n", damage * 2);
     }
 }
 
 class 활 extends 무기 {
-    double damage = 15;
-    double magnification = 1.5;
-    double skillDamage = damage * magnification;
-    public void 사용() {
-        System.out.println("활로 데미지 " + damage + " 공격");
+    void 무기사용() {
+        weaponName = "활";
+        damage = 10;
+        System.out.printf("%s로 데미지 %f 공격\n",weaponName, damage);
     }
-
-    public void 무기스킬사용() {
-        System.out.println("불화살 스킬을 사용합니다. " + magnification + "배(" + skillDamage + ")의 피해를 입힙니다.");
+    void 무기스킬사용() {
+        System.out.printf("불화살 스킬을 사용합니다. 1.5배(%f)의 피해를 입힙니다.\n", damage * 1.5);
     }
 }

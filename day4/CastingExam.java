@@ -1,4 +1,4 @@
-package Exam;
+package day4;
 
 public class CastingExam {
     public static void main(String[] args) {

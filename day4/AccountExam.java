@@ -1,4 +1,4 @@
-package Exam;
+package day4;
 
 import day4.Account;
 

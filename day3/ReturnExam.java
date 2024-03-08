@@ -1,4 +1,4 @@
-package Exam;
+package day3;
 
 import java.security.PrivilegedExceptionAction;
 

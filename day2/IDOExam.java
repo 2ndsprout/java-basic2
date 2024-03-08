@@ -1,4 +1,4 @@
-package Exam;
+package day2;
 
 public class IDOExam {
     public static void main(String[] args) {

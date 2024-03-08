@@ -1,4 +1,4 @@
-package Exam;
+package day1;
 
 public class VariableExam2 {
     public static void main(String[] args) {

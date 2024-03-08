@@ -1,4 +1,4 @@
-package Exam.TV3;
+package day4.TV3;
 
  class TVSimulation {
      public static void main(String[] args) {
@@ -45,6 +45,9 @@ package Exam.TV3;
 
 class 표준Tv {
     String brand;
+    public 표준Tv () {
+
+    }
 
     // 생성자를 통해 브랜드 이름 설정
     public 표준Tv(String brand) {
