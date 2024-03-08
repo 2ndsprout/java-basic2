@@ -3,6 +3,7 @@ package day3;
 public class 안녕 {
     static int num = 10;
     public static void printValue (String str) {
+
         System.out.println(str);
     }
 
