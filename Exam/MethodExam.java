@@ -1,4 +1,4 @@
-package day3;
+package Exam;
 
 public class MethodExam {
 

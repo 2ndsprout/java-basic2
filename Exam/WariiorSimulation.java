@@ -1,4 +1,4 @@
-package day4;
+package Exam;
 
 public class WariiorSimulation {
     public static void main(String[] args) {

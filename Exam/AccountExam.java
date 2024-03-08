@@ -1,4 +1,6 @@
-package day4;
+package Exam;
+
+import day4.Account;
 
 public class AccountExam {
     public static void main(String[] args) {
